@@ -60,7 +60,7 @@ size_t longest_palindromic_subseq_2(const string& s) {  // time complexity: O(n^
         prev = tmp;
       } else {
         prev = subseq_len[j]; 
-        subseq_len[j] = max(subseq_len[j], subseq_len[j - 1]);  // initially subseq_len[i][j] has subseq_len[i - 1][j] in it,
+        subseq_len[j] = max(subseq_len[j], subseq_len[j - 1]);  // initially subseq_len[j] has subseq_len[i - 1][j] in it,
       }                                                                  // subseq_len[i][j - 1] get from previous step
     }
   }
