@@ -12,7 +12,7 @@ size_t right_child_ind(size_t i) {
 }
 
 size_t parent_ind(size_t i) {
-  return i / 2;
+  return (i - 1) / 2;
 }
 
 /**
